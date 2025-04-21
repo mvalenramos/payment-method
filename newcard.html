@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Card</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="stepper">
+            <div class="step">1</div>
+            <div class="line"></div>
+            <div class="step">2</div>
+            <div class="line"></div>
+            <div class="step active" aria-label="Paso actual"></div>
+        </div>
+
+        <div class="contenedor-header">
+            <a href="payment.html" class="flecha" aria-label="Volver atrás">
+                <svg class="icono-atras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                    stroke-width="2">
+                    <path d="M15 6l-6 6l6 6"></path>
+                </svg>
+            </a>
+            <h2>New Card</h2>
+        </div>
+    </header>
+
+    <main class="contenedor-nueva-tarjeta">
+
+        <div class="nueva-tarjeta">
+            <img src="img/newcard.png" alt="Nueva Tarjeta">
+        </div>
+    </main>
+
+    <form class="formulario-tarjeta">
+        <div class="campo">
+            <label for="card-nombre">Card Holder<span class="required">*</span></label>
+            <input type="text" id="card-nombre" name="card-nombre" placeholder="Nombre de la tarjeta" required>
+        </div>
+
+        <div class="campo">
+            <label for="card-numero">Card Number<span class="required">*</span></label>
+            <input type="text" id="card-numero" name="card-numero" placeholder="xxxx xxxx xxxx xxxx" required>
+        </div>
+
+        <div class="fila-doble">
+            <div class="campo">
+                <label for="expiracion">Expiration Date<span class="required">*</span></label>
+                <input type="text" id="expiracion" name="expiracion" placeholder="mm / yy" required>
+            </div>
+
+            <div class="campo">
+                <label for="codigo-seguridad">Security Code<span class="required">*</span></label>
+                <input type="text" id="odigo-seguridad" name="odigo-seguridad" placeholder="xxx" required>
+            </div>
+        </div>
+
+        <div class="campo-checkbox">
+            <input type="checkbox" id="saveCard" name="saveCard">
+            <label for="saveCard">Save your card data, they are secure</label>
+        </div>
+    </form>
+    <div class="contenedor-boton-card">
+        <button class="boton-grande">
+            <h1 class="texto-pagar>">Save Card</h1>
+        </button>
+    </div>
+
+</body>
+
+</html>

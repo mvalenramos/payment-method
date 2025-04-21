@@ -293,16 +293,16 @@ h5 {
         margin: 0;
     }
 
-    /**Boton Pagar**/
+    /**Boton Grande**/
 
     .contenedor-boton {
         padding: 0 1rem;
         margin-top: 5rem;
     }
 
-    .boton-pagar {
+    .boton-grande {
         width: 100%;
-        padding: 0.5rem;
+        padding: 0.1rem;
         background-color: var(--primario);
         color: var(--blanco);
         border: none;
@@ -310,8 +310,95 @@ h5 {
         cursor: pointer;
         text-align: center;
     }
+/**Nueva Tarjeta**/
 
+    .contenedor-nueva-tarjeta {
+        display: grid;
+        place-items: center start;
+        padding: 0 5rem;
+        max-width: 40rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nueva-tarjeta {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .nueva-tarjeta img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    /**Formulario**/
+    
+    .formulario-tarjeta {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 95%;
+        max-width: 400px;
+        margin: 2rem auto 0 auto;
+      }
+
+      .campo label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        color: var(--secundario);
+      }
+
+      input[type="text"]::placeholder {
+        color: var(--gris-oscuro); 
+        opacity: 1;
+      }
+      .required {
+        color: red;
+        margin-left: 0.2rem;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid var(--gris-oscuro);
+        border-radius: 0.5rem;
+        font-size: 1.4rem;
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+        border-color: var(--primario); /* al enfocar */
+      }
+
+      .fila-doble {
+        display: flex;
+        gap: 1.2rem;
+      }
+      
+      .fila-doble .campo {
+        flex: 1;
+      }
+
+      .campo-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+      }
+      
+      .campo-checkbox input[type="checkbox"] {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      .contenedor-boton-card{
+        padding: 0 1rem;
+        margin-top: 3rem;
+      }
 }
+
+
 
 @media (min-width: 430px) {
     .carrusel {
