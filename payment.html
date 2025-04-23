@@ -10,110 +10,123 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>
-    <div class="stepper">
-        <div class="step">1</div>
-        <div class="line"></div>
-        <div class="step">2</div>
-        <div class="line"></div>
-        <div class="step active" aria-label="Paso actual"></div>
-    </div>
-
-    <div class="contenedor-header">
-        <a href="#" class="flecha" aria-label="Volver atrás">
-            <svg class="icono-atras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                stroke-width="2">
-                <path d="M15 6l-6 6l6 6"></path>
-            </svg>
-        </a>
-        <h2 class="titulo">Payment Method</h2>
-    </div>
-</header>
-
-<main class="contenedor-metodos-de-pago">
-
-    <button class="boton boton-negro">
-        <svg class="iconos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24"
-            stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor">
-            <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z"></path>
-            <path d="M3 10l18 0"></path>
-            <path d="M7 15l.01 0"></path>
-            <path d="M11 15l2 0"></path>
-        </svg>
-        <span class="texto">Card</span>
-    </button> <!--Opcion 1-->
-
-    <button class="boton boton-blanco">
-        <svg class="iconos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2C2C2C" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-            <path
-                d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z">
-            </path>
-            <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2"></path>
-        </svg>
-        <span class="texto">Pay</span>
-    </button> <!--Opcion 2-->
-
-    <button class="boton boton-blanco">
-        <svg class="iconos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-            <path d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z"></path>
-            <path d="M12 8l0 13"></path>
-            <path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7"></path>
-            <path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5"></path>
-        </svg>
-        <span class="texto">GiftCard</span>
-    </button> <!--Opcion 3-->
-
-</main>
-
-<div class="contenedor-seleccion-tarjeta">
-    <h4 class="subtitulo">Select your card</h4>
-    <a href="newcard.html" class="agregar" aria-label="Agregar tarjeta">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-            <path d="M12 5l0 14"></path>
-            <path d="M5 12l14 0"></path>
-        </svg>
-    </a>
-</div>
-
-<section class="carrusel">
-    <div class="contenedor-tarjeta">
-        <img src="img/tarjetabbva.png" alt="Tarjeta BBVA" class="tarjeta tarjeta-activa">
-        <img src="img/tarjetaimagin.png" alt="Tarjeta ImaginBank" class="tarjeta tarjeta-oculta">
-    </div>
-
-    <div class="indicadores">
-        <span class="punto activo"></span>
-        <span class="punto"></span>
-    </div>
-</section>
-
-<div class="resumen-precio">
-    <div class="fila-precio">
-        <h5 class="etiqueta">Subtotal</h5>
-        <h5 class="valor">83,00</h5>
-    </div>
-
-    <div class="fila-precio">
-        <h5 class="etiqueta">Shipping cost</h5>
-        <h5 class="valor">4,99</h5>
-    </div>
-
-    <div class="fila-precio fila-precio__total total">
-        <h3 class="etiqueta-total">Total amount</h3>
-        <h3 class="valor-total">87,99 €</h3>
-    </div>
-</div>
-<div class="contenedor-boton">
-<button class="boton-grande">
-    <h1 class="texto-pagar>">Pay now</h1>
-</button>
-</div>
 <body>
 
+    <header>
+        <div class="stepper">
+            <div class="step">1</div>
+            <div class="line"></div>
+            <div class="step">2</div>
+            <div class="line"></div>
+            <div class="step active" aria-label="Paso actual"></div>
+        </div>
+
+        <div class="contenedor-header">
+            <a href="#" class="flecha" aria-label="Volver atrás">
+                <svg class="icono-atras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                    stroke-width="2">
+                    <path d="M15 6l-6 6l6 6"></path>
+                </svg>
+            </a>
+            <h2 class="titulo">Payment Method</h2>
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <div class="contenido-izquierda">
+
+            <section class="contenedor-metodos-de-pago">
+
+                <button class="boton boton-negro">
+                    <svg class="iconos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24"
+                        height="24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+                        stroke="currentColor">
+                        <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z"></path>
+                        <path d="M3 10l18 0"></path>
+                        <path d="M7 15l.01 0"></path>
+                        <path d="M11 15l2 0"></path>
+                    </svg>
+                    <span class="texto">Card</span>
+                </button> <!--Opcion 1-->
+
+                <button class="boton boton-blanco">
+                    <svg class="iconos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2C2C2C"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                        stroke-width="2">
+                        <path
+                            d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z">
+                        </path>
+                        <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2"></path>
+                    </svg>
+                    <span class="texto">Pay</span>
+                </button> <!--Opcion 2-->
+
+                <button class="boton boton-blanco">
+                    <svg class="iconos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
+                        stroke-width="2">
+                        <path d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z"></path>
+                        <path d="M12 8l0 13"></path>
+                        <path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7"></path>
+                        <path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5">
+                        </path>
+                    </svg>
+                    <span class="texto">GiftCard</span>
+                </button> <!--Opcion 3-->
+            </section>
+
+            <section class="contenedor-seleccion-tarjeta">
+                <h4 class="subtitulo">Select your card</h4>
+                <a href="newcard.html" class="agregar" aria-label="Agregar tarjeta">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg>
+                </a>
+            </section>
+
+            <section class="carrusel">
+                <div class="contenedor-tarjeta">
+                    <img src="img/tarjetabbva.png" alt="Tarjeta BBVA" class="tarjeta tarjeta-activa">
+                    <img src="img/tarjetaimagin.png" alt="Tarjeta ImaginBank" class="tarjeta tarjeta-oculta">
+                </div>
+
+                <div class="indicadores">
+                    <span class="punto activo"></span>
+                    <span class="punto"></span>
+                </div>
+            </section>
+        </div> <!--Fin de izquierda-->
+
+        <div class="linea-vertical"></div>
+
+        <div class="contenido-derecha">
+            <div class="resumen-precio">
+                <div class="fila-precio">
+                    <h5 class="etiqueta">Subtotal</h5>
+                    <h5 class="valor">83,00</h5>
+                </div>
+
+                <div class="fila-precio">
+                    <h5 class="etiqueta">Shipping cost</h5>
+                    <h5 class="valor">4,99</h5>
+                </div>
+
+                <div class="fila-precio fila-precio__total total">
+                    <h3 class="etiqueta-total">Total amount</h3>
+                    <h3 class="valor-total">87,99 €</h3>
+                </div>
+            </div>
+            <div class="contenedor-boton">
+                <button class="boton-grande">
+                    <h1 class="texto-pagar>">Pay now</h1>
+                </button>
+            </div>
+        </div> <!--Fin de derecha-->
+    </main>
 </body>
 
 </html>

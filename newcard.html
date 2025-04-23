@@ -29,50 +29,59 @@
                     <path d="M15 6l-6 6l6 6"></path>
                 </svg>
             </a>
-            <h2>New Card</h2>
+            <h2 class="titulo">New Card</h2>
         </div>
     </header>
 
-    <main class="contenedor-nueva-tarjeta">
-
-        <div class="nueva-tarjeta">
-            <img src="img/newcard.png" alt="Nueva Tarjeta">
+    <main class="contenedor-principal-newcard">
+        <div class="contenido-izquierda-newcard">
+            <section class="contenedor-nueva-tarjeta">
+                <div class="nueva-tarjeta">
+                    <img src="img/newcard.png" alt="Nueva Tarjeta">
+                </div>
+            </section>
         </div>
+
+        <div class="linea-vertical-newcard"></div>
+
+        <div class="contenido-derecha-newcard">
+
+            <form class="formulario-tarjeta">
+
+                <div class="campo">
+                    <label for="card-nombre">Card Holder<span class="required">*</span></label>
+                    <input type="text" id="card-nombre" name="card-nombre" placeholder="Card Name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="card-numero">Card Number<span class="required">*</span></label>
+                    <input type="text" id="card-numero" name="card-numero" placeholder="xxxx xxxx xxxx xxxx" required>
+                </div>
+
+                <div class="fila-doble">
+                    <div class="campo">
+                        <label for="expiracion">Expiration Date<span class="required">*</span></label>
+                        <input type="text" id="expiracion" name="expiracion" placeholder="mm / yy" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="codigo-seguridad">Security Code<span class="required">*</span></label>
+                        <input type="text" id="odigo-seguridad" name="odigo-seguridad" placeholder="xxx" required>
+                    </div>
+                </div>
+
+                <div class="campo-checkbox">
+                    <input type="checkbox" id="saveCard" name="saveCard">
+                    <label for="saveCard">Save your card data, they are secure</label>
+                </div>
+
+                <div class="contenedor-boton-card">
+                    <button class="boton-grande boton-grande__card">
+                        <h1 class="texto-pagar>">Save Card</h1>
+                    </button>
+                </div>
+            </form>
     </main>
-
-    <form class="formulario-tarjeta">
-        <div class="campo">
-            <label for="card-nombre">Card Holder<span class="required">*</span></label>
-            <input type="text" id="card-nombre" name="card-nombre" placeholder="Nombre de la tarjeta" required>
-        </div>
-
-        <div class="campo">
-            <label for="card-numero">Card Number<span class="required">*</span></label>
-            <input type="text" id="card-numero" name="card-numero" placeholder="xxxx xxxx xxxx xxxx" required>
-        </div>
-
-        <div class="fila-doble">
-            <div class="campo">
-                <label for="expiracion">Expiration Date<span class="required">*</span></label>
-                <input type="text" id="expiracion" name="expiracion" placeholder="mm / yy" required>
-            </div>
-
-            <div class="campo">
-                <label for="codigo-seguridad">Security Code<span class="required">*</span></label>
-                <input type="text" id="odigo-seguridad" name="odigo-seguridad" placeholder="xxx" required>
-            </div>
-        </div>
-
-        <div class="campo-checkbox">
-            <input type="checkbox" id="saveCard" name="saveCard">
-            <label for="saveCard">Save your card data, they are secure</label>
-        </div>
-    </form>
-    <div class="contenedor-boton-card">
-        <button class="boton-grande">
-            <h1 class="texto-pagar>">Save Card</h1>
-        </button>
-    </div>
 
 </body>
 
